@@ -5,245 +5,88 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CompareAdda - Best Deals & Price Comparison</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
 <style>
-/* ----------------------- General ----------------------- */
+/* General */
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
     color: #1A1A1A;
 }
+a { text-decoration: none; color: inherit; }
+.container { width: 90%; margin: auto; }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.container {
-    width: 90%;
-    margin: auto;
-}
-
-/* ----------------------- Navigation ----------------------- */
+/* Navigation */
 nav {
     background-color: #1A1A1A;
     padding: 15px 0;
 }
+nav .nav-container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+nav .nav-container h2 { color: #FFD700; font-family: 'Poppins', sans-serif; font-size: 24px; margin: 0; }
+nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: 15px; margin: 0; padding: 0; }
+nav ul li a { color: #fff; font-weight: 500; transition: color 0.3s ease; }
+nav ul li a:hover { color: #FF6B6B; }
 
-nav .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav .nav-container h2 {
-    color: #FFD700;
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #FF6B6B;
-}
-
-/* ----------------------- Hero Section ----------------------- */
+/* Hero */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.pexels.com/photos/3945667/pexels-photo-3945667.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260') center/cover no-repeat;
-    color: #fff;
-    text-align: center;
-    padding: 120px 20px;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url('https://images.pexels.com/photos/3945667/pexels-photo-3945667.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260') center/cover no-repeat;
+    color: #fff; text-align: center; padding: 100px 20px;
 }
-
-.hero h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 48px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
+.hero h1 { font-family: 'Poppins', sans-serif; font-size: 42px; margin-bottom: 10px; }
+.hero p { font-size: 20px; margin-bottom: 20px; }
 .hero .btn {
-    padding: 12px 30px;
-    background-color: #FFD700;
-    color: #1A1A1A;
-    border-radius: 5px;
-    font-weight: 600;
+    padding: 12px 30px; background-color: #FFD700; color: #1A1A1A; border-radius: 5px; font-weight: 600;
     transition: background-color 0.3s ease;
 }
+.hero .btn:hover { background-color: #FF6B6B; color: #fff; }
 
-.hero .btn:hover {
-    background-color: #FF6B6B;
-    color: #fff;
-}
-
-/* ----------------------- Categories ----------------------- */
-.categories {
-    padding: 60px 0;
-    text-align: center;
-}
-
-.categories h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 32px;
-    margin-bottom: 40px;
-}
-
-.category-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-}
-
+/* Categories */
+.categories { padding: 50px 0; text-align: center; }
+.categories h2 { font-family: 'Poppins', sans-serif; font-size: 32px; margin-bottom: 30px; }
+.category-cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
 .category-card {
-    background-color: #fff;
-    border-radius: 10px;
-    width: 250px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-    overflow: hidden;
+    background-color: #fff; border-radius: 10px; width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden; transition: transform 0.3s ease;
 }
-
-.category-card:hover {
-    transform: translateY(-10px);
-}
-
-.category-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-.category-card h3 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    margin: 15px 0 5px;
-}
-
-.category-card p {
-    font-size: 14px;
-    margin-bottom: 15px;
-    padding: 0 10px;
-    color: #555;
-}
-
+.category-card:hover { transform: translateY(-8px); }
+.category-card img { width: 100%; height: 180px; object-fit: cover; border-radius: 10px 10px 0 0; }
+.category-card h3 { font-family: 'Poppins', sans-serif; font-size: 20px; margin: 10px 0 5px; }
+.category-card p { font-size: 14px; margin: 0 10px 10px; color: #555; }
 .category-card a {
-    display: inline-block;
-    margin-bottom: 15px;
-    padding: 8px 20px;
-    background-color: #FFD700;
-    color: #1A1A1A;
-    border-radius: 5px;
-    font-weight: 500;
+    display: inline-block; margin-bottom: 15px; padding: 8px 20px; background-color: #FFD700;
+    color: #1A1A1A; border-radius: 5px; font-weight: 500;
 }
+.category-card a:hover { background-color: #FF6B6B; color: #fff; }
 
-.category-card a:hover {
-    background-color: #FF6B6B;
-    color: #fff;
-}
-
-/* ----------------------- Deals Section ----------------------- */
-.products {
-    padding: 60px 0;
-    text-align: center;
-}
-
-.products h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 32px;
-    margin-bottom: 40px;
-}
-
-.product-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-}
-
+/* Products */
+.products { padding: 50px 0; text-align: center; }
+.products h2 { font-family: 'Poppins', sans-serif; font-size: 32px; margin-bottom: 30px; }
+.product-cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
 .product-card {
-    background-color: #fff;
-    width: 260px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    background-color: #fff; width: 260px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
 }
-
-.product-card:hover {
-    transform: translateY(-10px);
-}
-
-.product-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-.product-card h3 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    margin: 15px 0 5px;
-}
-
-.product-card p {
-    font-size: 14px;
-    margin: 0 10px 10px;
-    color: #555;
-}
-
+.product-card:hover { transform: translateY(-8px); }
+.product-card img { width: 100%; height: 180px; object-fit: cover; }
+.product-card h3 { font-family: 'Poppins', sans-serif; font-size: 18px; margin: 10px 0 5px; }
+.product-card p { font-size: 14px; margin: 0 10px 10px; color: #555; }
 .product-card a {
-    display: inline-block;
-    margin-bottom: 15px;
-    padding: 8px 20px;
-    background-color: #FFD700;
-    color: #1A1A1A;
-    border-radius: 5px;
-    font-weight: 500;
+    display: inline-block; margin-bottom: 15px; padding: 8px 20px; background-color: #FFD700;
+    color: #1A1A1A; border-radius: 5px; font-weight: 500;
 }
+.product-card a:hover { background-color: #FF6B6B; color: #fff; }
 
-.product-card a:hover {
-    background-color: #FF6B6B;
-    color: #fff;
-}
+/* Footer */
+footer { background-color: #1A1A1A; color: #fff; text-align: center; padding: 20px 0; font-size: 14px; }
 
-/* ----------------------- Footer ----------------------- */
-footer {
-    background-color: #1A1A1A;
-    color: #fff;
-    text-align: center;
-    padding: 25px 0;
-    font-size: 14px;
-}
-
-/* ----------------------- Responsive ----------------------- */
+/* Responsive */
 @media (max-width: 768px) {
-    .category-cards, .product-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-    .hero h1 {
-        font-size: 36px;
-    }
-    .hero p {
-        font-size: 18px;
-    }
+    .category-cards, .product-cards { flex-direction: column; align-items: center; }
+    .hero h1 { font-size: 28px; }
+    .hero p { font-size: 16px; }
+    nav .nav-container { flex-direction: column; gap: 10px; }
+    nav ul { justify-content: center; }
 }
 </style>
 </head>
@@ -296,17 +139,15 @@ footer {
     </div>
 </section>
 
-<!-- Deals Section -->
+<!-- Products Section -->
 <section class="products container">
     <h2>Hot Deals</h2>
     <div class="product-cards">
         <div class="product-card">
-            <img src="https://images.pexels.com/photos/4042805/pexels-photo-4042805.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Smartphone">
+            <img src="https://images.pexels.com/photos/4042805/pexels-photo-4042805.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Samsung Galaxy M Series">
             <h3>Samsung Galaxy M Series</h3>
             <p>Get amazing discounts on Samsung Galaxy smartphones.</p>
             <a href="https://www.amazon.in" target="_blank">Buy Now</a>
         </div>
         <div class="product-card">
-            <img src="https://images.pexels.com/photos/374870/pexels-photo-374870.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Headphones">
-            <h3>Sony WH-1000XM5</h3>
-            <p>Experience premium sound with Sony noise-canc
+            <img src="https://images.pexels.com/photos/374870
