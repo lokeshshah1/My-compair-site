@@ -1,50 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - CompareAdda</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - CompareAdda</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+body { margin: 0; font-family: 'Roboto', sans-serif; background-color: #f4f4f4; color: #1A1A1A; }
+.container { width: 90%; margin: auto; padding: 50px 0; }
+h1 { font-family: 'Poppins', sans-serif; text-align: center; margin-bottom: 30px; }
+form { max-width: 600px; margin: auto; background-color: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+input, textarea { width: 100%; padding: 12px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; font-size: 16px; }
+button { padding: 12px 25px; background-color: #FFD700; border: none; color: #1A1A1A; font-weight: 600; border-radius: 5px; cursor: pointer; transition: 0.3s; }
+button:hover { background-color: #FF6B6B; color: #fff; }
+nav { background-color: #1A1A1A; padding: 15px 0; }
+nav .nav-container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; width: 90%; margin: auto; }
+nav .nav-container h2 { color: #FFD700; font-family: 'Poppins', sans-serif; font-size: 24px; margin: 0; }
+nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: 15px; margin: 0; padding: 0; }
+nav ul li a { color: #fff; font-weight: 500; transition: color 0.3s ease; }
+nav ul li a:hover { color: #FF6B6B; }
+footer { background-color: #1A1A1A; color: #fff; text-align: center; padding: 20px 0; font-size: 14px; margin-top: 50px; }
+@media (max-width:768px){nav .nav-container{flex-direction:column;gap:10px}nav ul{justify-content:center}}
+</style>
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <h2>CompareAdda</h2>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="privacy.html">Privacy Policy</a></li>
-                <li><a href="gadgets.html">Gadgets</a></li>
-                <li><a href="beauty.html">Beauty</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <header class="hero">
-        <h1>Contact Us</h1>
-        <p>Have questions or feedback? We'd love to hear from you!</p>
-    </header>
+<nav>
+<div class="nav-container">
+<h2>CompareAdda</h2>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="privacy.html">Privacy Policy</a></li>
+<li><a href="gadgets.html">Gadgets</a></li>
+<li><a href="beauty.html">Beauty</a></li>
+</ul>
+</div>
+</nav>
 
-    <main>
-        <section class="contact-section container">
-            <h2>Get in Touch</h2>
-            <p>Email: <a href="mailto:support@compareadda.com">support@compareadda.com</a></p>
-            <p>Phone: <a href="tel:+919876543210">+91-9876543210</a></p>
+<div class="container">
+<h1>Contact Us</h1>
+<form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+</div>
 
-            <h3>Send a Message</h3>
-            <form action="#" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </section>
-    </main>
+<footer>
+&copy; 2025 CompareAdda. All Rights Reserved.
+</footer>
 
-    <footer>
-        <p>&copy; 2025 CompareAdda. All rights reserved.</p>
-    </footer>
 </body>
 </html>
