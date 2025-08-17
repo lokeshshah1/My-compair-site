@@ -6,21 +6,32 @@
 <title>Contact - CompareAdda</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 <style>
-body { margin: 0; font-family: 'Roboto', sans-serif; background-color: #f4f4f4; color: #1A1A1A; }
-.container { width: 90%; margin: auto; padding: 50px 0; }
-h1 { font-family: 'Poppins', sans-serif; text-align: center; margin-bottom: 30px; }
-form { max-width: 600px; margin: auto; background-color: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-input, textarea { width: 100%; padding: 12px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; font-size: 16px; }
-button { padding: 12px 25px; background-color: #FFD700; border: none; color: #1A1A1A; font-weight: 600; border-radius: 5px; cursor: pointer; transition: 0.3s; }
+body { margin: 0; font-family: 'Roboto', sans-serif; background-color: #f9f9f9; color: #1A1A1A; }
+.container { width: 90%; max-width: 1000px; margin: auto; padding: 50px 20px; }
+h1 { font-family: 'Poppins', sans-serif; text-align: center; margin-bottom: 20px; font-size: 32px; color: #333; }
+p.intro { text-align: center; max-width: 700px; margin: 0 auto 40px auto; font-size: 16px; color: #555; }
+
+form { max-width: 600px; margin: auto; background-color: #fff; padding: 35px; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
+input, textarea { width: 100%; padding: 14px; margin: 12px 0; border-radius: 8px; border: 1px solid #ccc; font-size: 16px; transition: all 0.3s ease; }
+input:focus, textarea:focus { border-color: #FFD700; outline: none; box-shadow: 0 0 8px rgba(255,215,0,0.4); }
+button { width: 100%; padding: 14px; background-color: #FFD700; border: none; color: #1A1A1A; font-weight: 600; border-radius: 8px; cursor: pointer; font-size: 16px; transition: 0.3s; }
 button:hover { background-color: #FF6B6B; color: #fff; }
+
 nav { background-color: #1A1A1A; padding: 15px 0; }
 nav .nav-container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; width: 90%; margin: auto; }
 nav .nav-container h2 { color: #FFD700; font-family: 'Poppins', sans-serif; font-size: 24px; margin: 0; }
 nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: 15px; margin: 0; padding: 0; }
-nav ul li a { color: #fff; font-weight: 500; transition: color 0.3s ease; }
+nav ul li a { color: #fff; font-weight: 500; transition: color 0.3s ease; text-decoration:none; }
 nav ul li a:hover { color: #FF6B6B; }
-footer { background-color: #1A1A1A; color: #fff; text-align: center; padding: 20px 0; font-size: 14px; margin-top: 50px; }
-@media (max-width:768px){nav .nav-container{flex-direction:column;gap:10px}nav ul{justify-content:center}}
+
+footer { background-color: #1A1A1A; color: #fff; text-align: center; padding: 20px 15px; font-size: 14px; margin-top: 50px; }
+footer small { display: block; margin-top: 8px; font-size: 12px; color: #bbb; }
+
+@media (max-width:768px){
+  nav .nav-container{flex-direction:column;gap:10px}
+  nav ul{justify-content:center}
+  form{padding:25px}
+}
 </style>
 </head>
 <body>
@@ -41,6 +52,8 @@ footer { background-color: #1A1A1A; color: #fff; text-align: center; padding: 20
 
 <div class="container">
 <h1>Contact Us</h1>
+<p class="intro">We would love to hear from you! Whether you have a question, feedback, or a business inquiry, feel free to reach out by filling the form below.</p>
+
 <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
 <input type="text" name="name" placeholder="Your Name" required>
 <input type="email" name="email" placeholder="Your Email" required>
@@ -50,7 +63,8 @@ footer { background-color: #1A1A1A; color: #fff; text-align: center; padding: 20
 </div>
 
 <footer>
-&copy; 2025 CompareAdda. All Rights Reserved.
+<p>&copy; 2025 CompareAdda. All Rights Reserved.</p>
+<small>Disclaimer: As an Amazon, Flipkart, and Nykaa affiliate, we may earn from qualifying purchases made through our links.</small>
 </footer>
 
 </body>
