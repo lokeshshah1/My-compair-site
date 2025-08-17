@@ -6,55 +6,73 @@
 <title>About - CompareAdda</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 <style>
-body { margin:0; font-family:'Roboto',sans-serif; background-color:#f4f4f4; color:#1A1A1A; }
-.container { width:90%; margin:auto; padding:50px 0; }
-h1,h2 { font-family:'Poppins',sans-serif; text-align:center; margin-bottom:30px; }
-p { line-height:1.6; margin-bottom:15px; }
+body { margin:0; font-family:'Roboto',sans-serif; background-color:#f9f9f9; color:#1A1A1A; }
+.container { width:90%; max-width:1000px; margin:auto; padding:50px 20px; }
+h1,h2 { font-family:'Poppins',sans-serif; text-align:center; margin-bottom:20px; color:#333; }
+h1 { font-size:32px; font-weight:700; }
+h2 { font-size:24px; font-weight:600; margin-top:40px; }
+p { line-height:1.7; margin-bottom:15px; font-size:16px; color:#444; }
 nav { background-color: #1A1A1A; padding: 15px 0; }
 nav .nav-container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; width: 90%; margin: auto; }
 nav .nav-container h2 { color: #FFD700; font-family: 'Poppins', sans-serif; font-size: 24px; margin: 0; }
 nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: 15px; margin: 0; padding: 0; }
-nav ul li a { color: #fff; font-weight: 500; transition: color 0.3s ease; }
+nav ul li a { color: #fff; font-weight: 500; transition: color 0.3s ease; text-decoration:none; }
 nav ul li a:hover { color: #FF6B6B; }
-footer { background-color:#1A1A1A; color:#fff; text-align:center; padding:20px 0; font-size:14px; margin-top:50px; }
-@media(max-width:768px){nav .nav-container{flex-direction:column;gap:10px}nav ul{justify-content:center}}
+section { background:#fff; padding:25px 20px; margin:20px 0; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.08); }
+footer { background-color:#1A1A1A; color:#fff; text-align:center; padding:20px 15px; font-size:14px; margin-top:50px; }
+footer small { display:block; margin-top:8px; font-size:12px; color:#bbb; }
+@media(max-width:768px){ nav .nav-container{flex-direction:column;gap:10px} nav ul{justify-content:center} }
 </style>
 </head>
 <body>
 
 <nav>
-<div class="nav-container">
-<h2>CompareAdda</h2>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li><a href="privacy.html">Privacy Policy</a></li>
-<li><a href="gadgets.html">Gadgets</a></li>
-<li><a href="beauty.html">Beauty</a></li>
-</ul>
-</div>
+  <div class="nav-container">
+    <h2>CompareAdda</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="gadgets.html">Gadgets</a></li>
+      <li><a href="beauty.html">Beauty</a></li>
+    </ul>
+  </div>
 </nav>
 
 <div class="container">
-<h1>About CompareAdda</h1>
-<p>Welcome to CompareAdda – your ultimate destination for the latest deals and price comparisons on electronics, beauty products, and home appliances. Our mission is to help you make informed shopping decisions and save money while buying online.</p>
 
-<h2>Our Vision</h2>
-<p>At CompareAdda, we aim to provide a trustworthy platform where users can easily compare products, check current prices, and access exclusive deals from popular online stores like Amazon, Flipkart, Nykaa, and more.</p>
+  <h1>About CompareAdda</h1>
 
-<h2>Why Choose Us?</h2>
-<p>We handpick the best deals and present them in a user-friendly format. Our website is mobile-friendly, fast, and constantly updated to ensure you never miss a bargain. All affiliate links are carefully selected for authenticity and relevance.</p>
+  <section>
+    <p>Welcome to <strong>CompareAdda</strong> – your ultimate destination for the latest deals and price comparisons on electronics, beauty products, and home appliances. Our mission is to help you make informed shopping decisions and save money while buying online.</p>
+  </section>
 
-<h2>Affiliate Disclaimer</h2>
-<p>CompareAdda earns a small commission through affiliate links at no extra cost to you. This helps us keep the website running and provide free, valuable content to our users. We only recommend products we trust and would personally use.</p>
+  <section>
+    <h2>Our Vision</h2>
+    <p>At CompareAdda, we aim to provide a trustworthy platform where users can easily compare products, check current prices, and access exclusive deals from popular online stores like <strong>Amazon</strong>, <strong>Flipkart</strong>, <strong>Nykaa</strong>, and more.</p>
+  </section>
 
-<h2>Contact Us</h2>
-<p>If you have any questions, suggestions, or feedback, feel free to reach out via our <a href="contact.html">Contact Page</a>. We would love to hear from you!</p>
+  <section>
+    <h2>Why Choose Us?</h2>
+    <p>We handpick the best deals and present them in a user-friendly format. Our website is mobile-friendly, fast, and constantly updated to ensure you never miss a bargain. All affiliate links are carefully selected for authenticity and relevance.</p>
+  </section>
+
+  <section>
+    <h2>Affiliate Disclaimer</h2>
+    <p>CompareAdda earns a small commission through affiliate links at no extra cost to you. This helps us keep the website running and provide free, valuable content to our users. We only recommend products we trust and would personally use.</p>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <p>If you have any questions, suggestions, or feedback, feel free to reach out via our <a href="contact.html">Contact Page</a>. We would love to hear from you!</p>
+  </section>
+
 </div>
 
 <footer>
-&copy; 2025 CompareAdda. All Rights Reserved.
+  <p>&copy; 2025 CompareAdda. All Rights Reserved.</p>
+  <small>Disclaimer: As an Amazon, Flipkart, and Nykaa affiliate, we may earn from qualifying purchases made through our links.</small>
 </footer>
 
 </body>
