@@ -4,71 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us - CompareAdda</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f9;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      width: 90%;
-      max-width: 600px;
-      margin: 50px auto;
-      background: #fff;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #333;
-    }
-    label {
-      display: block;
-      margin: 10px 0 5px;
-      color: #555;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      font-size: 16px;
-    }
-    button {
-      background: #007BFF;
-      color: #fff;
-      border: none;
-      padding: 12px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-      width: 100%;
-      font-size: 16px;
-    }
-    button:hover {
-      background: #0056b3;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h2>Contact Us</h2>
-    <!-- yaha email id update kar di gayi hai -->
-    <form action="mailto:sasyavatmal@gmail.com" method="post" enctype="text/plain">
-      <label for="name">Your Name</label>
-      <input type="text" id="name" name="name" required>
+  <header>
+    <h2>CompareAdda</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="gadgets.html">Gadgets</a></li>
+        <li><a href="beauty.html">Beauty</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <label for="email">Your Email</label>
-      <input type="email" id="email" name="email" required>
+  <main>
+    <section class="contact">
+      <h1>Contact Us</h1>
+      <p>
+        We would love to hear from you! Whether you have a question, feedback, or a business inquiry, feel free to reach out by filling the form below.
+      </p>
 
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
 
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
+      <p style="margin-top:20px; font-weight:bold;">
+        📧 Email: <a href="mailto:sasyavatmal@gmail.com">sasyavatmal@gmail.com</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 CompareAdda. All Rights Reserved.</p>
+    <p>Disclaimer: As an Amazon, Flipkart, and Nykaa affiliate, we may earn from qualifying purchases made through our links.</p>
+  </footer>
 </body>
 </html>
